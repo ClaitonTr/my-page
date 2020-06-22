@@ -12,7 +12,7 @@ React page code
 
 ## Run
 
-Clone this repository
-cd my-page
-npm install
-npm start
+Clone this repository  
+cd my-page  
+npm install  
+npm start  
