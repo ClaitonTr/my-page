@@ -1,16 +1,16 @@
 # my-page
 React page code
 
-##This is my own website
+## This is my own website
 
-###Features
+### Features
 
 - React with Typescript
 - Internationalization with react-intl
 - style with pure css
 - SPA with react-router-dom
 
-##Run
+## Run
 
 Clone this repository
 cd my-page
