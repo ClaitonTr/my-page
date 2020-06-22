@@ -1,0 +1,14 @@
+{
+    "header.about": "Sobre",
+    "header.contact": "Contato",
+    "header.portfolio": "Portfólio",
+    "home.title": "Olá Mundo!",
+    "home.description": "Esta página é apenas para demostração de conhecimentos em desenvolvimento web.",
+    "home.button": "Saber mais",
+    "about.title": "Sobre mim",
+    "about.description": "Natural de Chapecó, Santa Catarina, cursando ciência da computação na Universidade Federal da Fronteira Sul (UFFS), apaixonado por tecnologia e aprender coisas novas, procurando por oportunidades.",
+    "about.sec-title": "Conhecimentos",
+    "about.learning": "E aprendendo...",
+    "contact.title": "Onde me encontrar",
+    "portfolio.this": "Este site"
+}

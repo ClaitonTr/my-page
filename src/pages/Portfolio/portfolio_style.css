@@ -1,0 +1,155 @@
+#main-portfolio {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    list-style: none;
+    margin: 50px auto;
+}
+
+.project-content {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-content img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0;
+    color: white;
+    border-radius: 8px;
+}
+
+.overlay:hover {
+    opacity: 0.6;
+}
+
+.project-detail {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-detail h3 {
+    margin-bottom: 18px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.links a+div {
+    margin-left: 16px;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.links a:hover {
+    background-color: #333;
+}
+
+.eye:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+.eye {
+    display: flex;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+#modal-image {
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#close:hover {
+    cursor: pointer;
+    color: #bbb;
+}
+
+#image-opened {
+    margin: auto;
+    display: block;
+    width: 70%;
+  }
+
+#image-opened {  
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+  }
+
+@media only screen and (max-width: 600px) {
+    #project-grid {
+        display: block;
+    }
+
+    #project-grid li {
+        margin-bottom: 24px;
+    }
+
+    #image-opened {
+        width: 100%;
+    }
+}

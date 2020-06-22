@@ -1,0 +1,164 @@
+#main-about {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 118px);
+}
+
+#foto {
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#description {
+    text-align: center;
+    width: 100%;
+    margin: 0 100px;
+}
+
+#description h1 {
+    margin-bottom: 30px;
+    font-family: 'Fira Code', sans-serif;
+    font-size: 30px;
+}
+
+#top-content {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#bottom-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--hover-color);
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 32px 0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    
+}
+
+#bottom-content h1 {
+    font-family: 'Fira Code', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#bottom-content svg {
+    font-size: 50px;
+}
+
+#logos {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logos div + div {
+    margin-left: 30px;
+}
+
+#tooltip-js {
+    color: #F2DB1D;
+}
+
+#tooltip-html {
+    color: #E24B25;
+}
+
+#tooltip-css {
+    color: #1571B5;
+}
+
+#tooltip-java {
+    color: #0571B6;
+}
+
+#tooltip-py {
+    color: #3772A5;
+}
+
+#tooltip-github {
+    color: black;
+}
+
+#tooltip-node {
+    color: #8DBF41;
+}
+
+#tooltip-react {
+    color: #24D2F8;
+}
+
+#tooltip-js span, 
+#tooltip-html span, 
+#tooltip-css span, 
+#tooltip-java span, 
+#tooltip-py span, 
+#tooltip-github span, 
+#tooltip-flutter span, 
+#tooltip-node span, 
+#tooltip-react span {
+    visibility: hidden;
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+#tooltip-js:hover span,
+#tooltip-html:hover span,
+#tooltip-css:hover span,
+#tooltip-py:hover span,
+#tooltip-java:hover span,
+#tooltip-github:hover span,
+#tooltip-flutter:hover span,
+#tooltip-node:hover span,
+#tooltip-react:hover span {
+    visibility: visible;
+}
+
+#tooltip-flutter img {
+    height: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    #main-about {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    #top-content {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    #logos {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+    }
+
+    #logos div + div {
+        margin-left: 0;
+    }
+
+    #logos div {
+        margin-bottom: 8px;
+    }
+  } 

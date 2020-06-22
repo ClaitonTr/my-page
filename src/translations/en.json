@@ -1,0 +1,14 @@
+{
+    "header.about": "About",
+    "header.portfolio": "Portfolio",
+    "header.contact": "Contact",
+    "home.title": "Hello World!",
+    "home.description": "This page is only for demonstrating knowledge in web development.",
+    "home.button": "Know more",
+    "about.title": "About me",
+    "about.description": "Born in Chapecó, Santa Catarina, studying computer science at the Federal University of Fronteira Sul (UFFS), passionate about technology and learning new things, looking for opportunities.",
+    "about.sec-title": "Skills",
+    "about.learning": "And learning...",
+    "contact.title": "Contact me",
+    "portfolio.this": "This site"
+}
